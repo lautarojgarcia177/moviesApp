@@ -1,0 +1,31 @@
+<div class="superior">
+    <div class="sub-superior">
+        <div class="l-container" *ngIf="estrenos">
+            <div class="item l-item-1 puntero"
+                 [routerLink]="['/movie', estrenos[0].id, 'home']">
+                <img [src]="estrenos[0].imagen" (error)="onImgError($event)">
+            </div>
+            <div class="item l-item-2 puntero"
+                 [routerLink]="['/movie', estrenos[1].id, 'home']">
+                <img [src]="estrenos[1].imagen" (error)="onImgError($event)">
+            </div>
+            <div class="item l-item-3 puntero"
+                 [routerLink]="['/movie', estrenos[2].id, 'home']">
+                <img [src]="estrenos[2].imagen" (error)="onImgError($event)">
+            </div>
+            <div class="item l-item-4 puntero"
+                 [routerLink]="['/movie', estrenos[3].id, 'home']">
+                <img [src]="estrenos[3].imagen" (error)="onImgError($event)">
+            </div>
+            <div class="item l-item-5 puntero"
+                 [routerLink]="['/movie', estrenos[4].id, 'home']">
+                <img [src]="estrenos[4].imagen" (error)="onImgError($event)">
+            </div>
+            <div class="item l-item-6 puntero"
+                 [routerLink]="['/movie', estrenos[5].id, 'home']">
+                <img [src]="estrenos[5].imagen" (error)="onImgError($event)">
+            </div>
+        </div>
+        
+    </div>
+</div>

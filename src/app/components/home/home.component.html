@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">MoviesApp</h1>
+        <p class="lead">This is an application built with Angular & TheMovieDb's API</p>
+    </div>
+</div>
+
+<div *ngIf="$estrenos | async as estrenos">
+    <h1>Popular</h1>
+    <hr>
+    <app-galeria-lautaro [estrenos]="estrenos"></app-galeria-lautaro>
+<!--     <hr>
+    <app-galeria [peliculas]="estrenos"></app-galeria> -->
+</div>

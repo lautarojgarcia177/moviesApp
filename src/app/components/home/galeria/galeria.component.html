@@ -1,0 +1,39 @@
+
+<div style="padding: 4rem;" class="row" *ngIf="peliculas">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-md-12 div-pic-1 puntero"
+                [routerLink]="['/movie', peliculas[0].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[0].imagen | peliculaImagen) + ')'}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 div-pic-2 puntero"
+                [routerLink]="['/movie', peliculas[1].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[1].imagen | peliculaImagen) + ')'}">
+            </div>
+            <div class="col-sm-6 div-pic-2 puntero"
+                [routerLink]="['/movie', peliculas[2].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[2].imagen | peliculaImagen) + ')'}">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6 div-pic-2 puntero"
+                [routerLink]="['/movie', peliculas[3].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[3].imagen | peliculaImagen) + ')'}">
+            </div>
+            <div class="col-sm-6 div-pic-2 puntero"
+                [routerLink]="['/movie', peliculas[4].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[4].imagen | peliculaImagen) + ')'}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 div-pic-1 puntero"
+                [routerLink]="['/movie', peliculas[5].id, 'home']"
+                [ngStyle]="{'background-image': 'url(' + (peliculas[5].imagen | peliculaImagen) + ')'}">
+            </div>
+        </div>
+    </div>
+</div>
